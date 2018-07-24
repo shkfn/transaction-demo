@@ -23,7 +23,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // ルートパラメータルール
+        Route::pattern('token', '[a-zA-Z0-9]+');
 
         parent::boot();
     }
